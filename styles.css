@@ -1,0 +1,191 @@
+/* For smooth scrolling*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+
+/* General body styles*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #C5C7BC;
+    margin: 0;
+    padding: 0.5rem;
+    line-height: 1.5;
+    
+}
+
+/* Headers */
+header {
+    background-color: #B6AE9F;
+    color: black;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Navigation bars using flexbox properties*/
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: #334443;
+    padding: 15px;
+    margin: 0;
+}
+
+nav li {
+    display: block;
+    margin: 0 5px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #B6AE9F;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    padding-top: 50px;
+
+}
+
+/*Sections styles*/
+section {
+    background-color: white;
+    max-width: 1000px;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    color:#B6AE9F ;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* CTA Buttons*/
+.contact-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+    background-color: #B6AE9F;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    
+
+}
+
+.btn:hover {
+    background-color: #5A9690;
+    transform: scale(1.05);
+}
+
+/* Projects Section*/
+.projects-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+
+        
+    }
+
+.project {
+    border-bottom: 1px solid #B7B89F;
+    padding: 5px 5px;
+    background-color: #ccc;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 10px;
+    position: static;    
+    
+}
+
+.project a {
+    color: #043915;
+    text-decoration: none;
+
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section*/
+#contact ul{
+    list-style: none;
+    padding: 10px;
+}
+
+#contact a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+#contact li{
+    margin-bottom: 10px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* The Footer*/
+footer {
+    text-align: center;
+    background-color: #B6AE9F;
+    color: black;
+    padding: 15px 0px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Responsive Design*/
+
+@media (max-width:600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    /* responsive for grid templates on mobile devices to resume to 1 column*/
+    .projects-container{
+            grid-template-columns: 1fr;
+        }
+
+
+    }
+    
+    
+
